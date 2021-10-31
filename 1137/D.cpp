@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int from[10];
-char s[1010][1010];
-
 int main()
 {
 	while (233)
