@@ -19,16 +19,11 @@ using namespace std;
 using namespace __gnu_pbds;
 typedef tree< ll,null_type,less<ll >,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
 
-
-
-
-const ll N   =  500005;
-const ll mod = 1e9 + 7;
-
-
-
-void solve(){
-
+int main(){
+     
+ ios_base::sync_with_stdio(false);   
+ cin.tie(NULL);
+ 
  ll x=0, y=0, c = 1, ans = 0;
  ll n, m, k;
  cin >> n >> m;
@@ -50,21 +45,13 @@ void solve(){
  		y = d[j].order_of_key(a[i][j]);
  		
  		c = max(x,y) + max(sz(d[j]) - y,sz(b[i])- x);
- 		c(c);
+ 		cout << c << '\n';
  	} 
  	cout << '\n';
  }
 
  
-    
- 
-}
 
-signed main(){
-     
- ios_base::sync_with_stdio(false);   
- cin.tie(NULL);
- //int T;cin >> T;while (T--)
- solve();
+ 
  return 0;
 }
