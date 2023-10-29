@@ -1,11 +1,18 @@
 #include <iostream>
 using namespace std;
+// initialise the main function
 int main()
 {
-    int a, b, result = 0;
+    // add solver function
+    solve();
+}
 
+void solve(){
+    int a, b;
     cout << "Enter two numbers to multiply: \n";
     cin >> a >> b;
+
+    int result = 0;
     while (b > 0)
     {
         if (b % 2 != 0)
@@ -15,6 +22,7 @@ int main()
         a = a << 1;
         b = b >> 1;
     }
-    cout << "Product: " << result;
-    return 0;
+    // print the result
+    cout << "Product: " << result << '\n';
+    return 0;   
 }
